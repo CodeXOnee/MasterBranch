@@ -7,15 +7,17 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class HomePageStep extends BaseClass{
-	HomePage hp ;
+	HomePage hp;
 
 	@Given("User is on Home Page")
 	public void user_is_on_home_page() {
 		BaseClass.initialize();
 	    String Url = driver.getCurrentUrl();
 	    String ExpectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
-	    if(Url.equals(ExpectedUrl)) {
-	    		System.out.println("Success");
+	    if(Url.equals(ExpectedUrl)) 
+	    {
+	    	String urltext=driver.getTitle();
+	    		System.out.println("urltext");
 	    }
 	    else {
 	    		System.out.println("Not on Home Page");
