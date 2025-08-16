@@ -5,7 +5,13 @@ Feature: Home Page Functionality Check
     And User Enters Valid Credentials
     When User Clicks on Login button
     Then User should navigate to Dashboard
-    
-    Scenario: Test the PIM page functionality
-    Given user is on PIM page and valid the PIM page 
-    
+
+  Scenario Outline: Test the PIM page functionality
+    Given user is on PIM page and valid the PIM page
+    When user click on add employee
+    Then user add employee "<firstname>" and "<middlename>" and "<lastname>"
+    And user click on save button
+
+    Examples: 
+      | firstname | middlename | lastname |
+      | Ankit     | Ganesh     | Wankhede |
