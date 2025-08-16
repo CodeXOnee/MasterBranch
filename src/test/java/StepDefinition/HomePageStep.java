@@ -19,8 +19,7 @@ public class HomePageStep extends BaseClass{
 	    {
 	    		System.out.println(Url);
 	    }
-	    else 
-	    {
+	    else {
 	    		System.out.println("Not on Home Page");
 	    }
 	}
@@ -48,10 +47,7 @@ public class HomePageStep extends BaseClass{
 	    {
 	    	System.out.println("Success   "+Url);
 	    }
-	    else 
-	    {
-	    		System.out.println(Url+"Not on Home Page");
-	    }
+
 	    	
 	}
 }
