@@ -8,8 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features= {"AllFeatureFiles"},
 		glue= {"StepDefinition"},
-		dryRun=true
-//		plugin= {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+		dryRun=false
+		//plugin= {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		
 		)
 
