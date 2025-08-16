@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features= {"AllFeatureFiles"},
 		glue= {"StepDefinition"},
-		dryRun=false
+		dryRun=true
 		//plugin= {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class RunnerTest extends AbstractTestNGCucumberTests{
