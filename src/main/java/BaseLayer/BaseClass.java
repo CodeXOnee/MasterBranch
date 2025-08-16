@@ -8,7 +8,6 @@ public class BaseClass {
 	public static void initialize() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();                                                                           
-		
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
-	
 }
