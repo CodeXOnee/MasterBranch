@@ -9,23 +9,23 @@ import UtilityLayer.UtilsClass;
 
 public class PIMPage extends BaseClass{
 	
-	@FindBy(name="")
+	@FindBy(name="firstName")
 	private WebElement fname;
 	
-	@FindBy(name="")
+	@FindBy(name="middleName")
 	private WebElement mname;
 	
-	@FindBy(name="")
+	@FindBy(name="lastName")
 	private WebElement lname;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
 	private WebElement savebtn;
 	
 	public PIMPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void working(String Fname, String Mname,String Lname) {
+	public void ValidatePIMPageFunctionality(String Fname, String Mname,String Lname) {
 		UtilsClass.sendKeys(fname,Fname);
 		UtilsClass.sendKeys(mname,Mname);
 		UtilsClass.sendKeys(lname,Lname);
