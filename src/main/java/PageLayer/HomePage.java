@@ -23,11 +23,11 @@ public class HomePage extends BaseClass{
 	}
 	
 	public void working(String name, String password) {
-		UtilsClass.SendKeys(uname,name);
-		UtilsClass.SendKeys(pass,password);
+		UtilsClass.sendKeys(uname,name);
+		UtilsClass.sendKeys(pass,password);
 	}
 	
 	public void login() {
-		UtilsClass.Click(btn);
+		UtilsClass.click(btn);
 	}
 }
